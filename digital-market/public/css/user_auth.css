@@ -1,0 +1,21 @@
+body{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.form-div{
+    background-color: yellow;
+    box-shadow: 2px 2px 5px 1px #000;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.logo-div{
+    position: absolute;
+    top: 30px;
+}

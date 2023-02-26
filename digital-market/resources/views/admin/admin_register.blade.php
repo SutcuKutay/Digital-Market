@@ -45,10 +45,6 @@
                         <button type="submit" class="btn btn-blue">Signup</button>
                     </div>
                 </form>
-                <div class="footer">
-                    <p>Copyright &copy; 2020 <a href="https://easylearningbd.com/">easy Learning</a>. All rights reserved.
-                    </p>
-                </div>
             </div>
         </div>
     </div>
