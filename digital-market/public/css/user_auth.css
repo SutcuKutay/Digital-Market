@@ -19,3 +19,12 @@ body{
     position: absolute;
     top: 30px;
 }
+
+.wrapper{
+    padding: 0;
+    background-color: grey;
+}
+
+.content_wrapper{
+    padding: 0;
+}

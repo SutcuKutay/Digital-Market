@@ -1,0 +1,17 @@
+.add-button {
+    background-color: green;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.add-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.add-button-div {
+    display: flex;
+    justify-content: flex-end;
+}

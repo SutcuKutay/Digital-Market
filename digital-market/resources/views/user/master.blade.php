@@ -69,7 +69,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="logo"><a href="/"><img src="{{ asset('images/logo.png') }}"></a></div>
+                        <div class="logo"><a href="/"><img src="{{ asset('images/logo.png') }}" width="400" height="200"></a></div>
                     </div>
                 </div>
             </div>
@@ -158,51 +158,8 @@
                                         </a>
                                     </li>
                                 @endauth
-                                {{-- @guest
-                                <li>
-                                    <a href="/user/register">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span>Register</span>
-                                    </a>
-                                </li>
-                                @endguest
-                                @auth
-                                <li>
-                                    <a href="#">
-                                        <img src="{{asset('images/user.png')}}" alt="" width="30" height="25">
-                                        <span>My Profile</span>
-                                    </a>
-                                </li>
-                                @endauth --}}
                             </ul>
                         </div>
-                        {{-- @if (Route::has('login'))
-                            <div class="login_menu">
-                                <ul>
-                                    <li><a href="#">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            <span class="padding_10">Cart</span></a>
-                                    </li>
-                                    @auth
-                                        <li><a href="#">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span class="padding_10">Profile</span></a>
-                                        </li>
-                                    @else
-                                        <li><a href="{{ route('login') }}">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <span class="padding_10">Login</span></a>
-                                        </li>
-                                        @if (Route::has('register'))
-                                            <li><a href="#">
-                                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                                    <span class="padding_10">Register</span></a>
-                                            </li>
-                                        @endif
-                                    @endauth
-                                </ul>
-                            </div>
-                        @endif --}}
                     </div>
                 </div>
             </div>
@@ -256,10 +213,10 @@
         <div class="container">
             <div class="footer_logo"><a href="index.html"><img src="{{ asset('images/logo.png') }}" width="100"
                         height="50"></a></div>
-            <div class="input_bt">
+            {{-- <div class="input_bt">
                 <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
                 <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-            </div>
+            </div> --}}
             <div class="footer_menu">
                 <ul>
                     <li><a href="#">Best Sellers</a></li>
@@ -269,7 +226,7 @@
                     <li><a href="#">Customer Service</a></li>
                 </ul>
             </div>
-            <div class="location_main">Help Line Number : <a href="#">+90 0532 416 6150</a></div>
+            {{-- <div class="location_main">Help Line Number : <a href="#">+90 0532 416 6150</a></div> --}}
         </div>
     </div>
     <!-- footer section end -->

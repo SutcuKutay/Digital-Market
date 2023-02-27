@@ -29,6 +29,15 @@ Route::prefix('admin')->group(function () {
     Route::get('/register', [AdminController::class, 'register'])->name('admin.register');
     Route::post('/register/create', [AdminController::class, 'registerCreate'])->name('admin_register_create');
     Route::get('/logout', [AdminController::class, 'logout'])->name('admin_logout')->middleware('admin');
+    Route::get('/dashboard/electronics', [ElectronicController::class, 'list'])->middleware('admin');
+    Route::get('/dashboard/fashion', [FashionController::class, 'list'])->middleware('admin');
+    Route::get('/dashboard/jewelry', [JewelryController::class, 'list'])->middleware('admin');
+    Route::get('/dashboard/electronics/addproduct', [ElectronicController::class, 'form'])->middleware('admin');
+    Route::post('/dashboard/electronics/addproduct', [ElectronicController::class, 'create'])->middleware('admin');
+    Route::get('/dashboard/fashion/addproduct', [FashionController::class, 'form'])->middleware('admin');
+    Route::post('/dashboard/fashion/addproduct', [FashionController::class, 'create'])->middleware('admin');
+    Route::get('/dashboard/jewelry/addproduct', [JewelryController::class, 'form'])->middleware('admin');
+    Route::post('/dashboard/jewelry/addproduct', [JewelryController::class, 'create'])->middleware('admin');
 });
 
 //#Admin Routes

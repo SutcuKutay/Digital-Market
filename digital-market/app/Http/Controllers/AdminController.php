@@ -43,7 +43,8 @@ class AdminController extends Controller
 
     public function dashboard()
     {
-        return view('admin.index');
+        $admins = Admin::query()->get();
+        return view('admin.index', compact('admins'));
     }
 
     public function logout(){

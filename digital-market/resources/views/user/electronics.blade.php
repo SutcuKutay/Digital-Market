@@ -16,7 +16,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Laptop</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/laptop-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/laptop-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -27,7 +27,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Mobile</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/mobile-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/mobile-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -38,7 +38,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Computers</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/computer-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/computer-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -58,7 +58,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Laptop</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/laptop-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/laptop-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -69,7 +69,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Mobile</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/mobile-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/mobile-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -80,7 +80,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Computers</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/computer-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/computer-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -100,7 +100,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Laptop</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/laptop-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/laptop-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -111,7 +111,7 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Mobile</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/mobile-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/mobile-img.png') }}"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
@@ -122,7 +122,8 @@
                                     <div class="box_main">
                                         <h4 class="shirt_text">Computers</h4>
                                         <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                                        <div class="electronic_img"><img src="images/computer-img.png"></div>
+                                        <div class="electronic_img"><img src="{{ asset('images/computer-img.png') }}">
+                                        </div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
                                             <div class="seemore_bt"><a href="#">See More</a></div>
