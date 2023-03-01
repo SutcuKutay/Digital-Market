@@ -1,6 +1,6 @@
 @extends('admin.form_master')
 @section('title')
-    Add Product
+    Add Electronic
 @endsection
 @section('form')
     <div class="wrapper">

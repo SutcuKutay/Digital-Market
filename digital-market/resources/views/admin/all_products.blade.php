@@ -1,6 +1,6 @@
 @extends('admin.admin_master')
 @section('title')
-    Electronics
+    All Products
 @endsection
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/admin_product.css') }}">
@@ -19,7 +19,7 @@
         <div class="panel">
             <div class="panel_header">
                 <div class="panel_title">
-                    <span>Product List | Electronics</span>
+                    <span>Product List | All</span>
                 </div>
             </div>
             <div class="panel_body">
@@ -28,6 +28,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Category ID</th>
                                 <th>Name</th>
                                 <th>Description</th>
                                 <th>Price</th>
@@ -37,6 +38,7 @@
                             @foreach ($products as $product)
                                 <tr>
                                     <td>{{ $product->id }}</td>
+                                    <td>{{ $product->category_id }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->description }}</td>
                                     <td>{{ $product->price }}</td>
@@ -48,7 +50,7 @@
             </div>
         </div> <!-- /table -->
         <div class="add-button-div">
-            <a class="add-button" href="/admin/dashboard/electronics/addproduct">New Product</a>
+            <a class="add-button" href="/admin/dashboard/addproduct">New Product</a>
         </div>
         {{-- <div class="add-button">
             <a href="/admin/dashboard/electronics/addproduct">New Product</a>

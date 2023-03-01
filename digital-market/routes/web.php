@@ -6,6 +6,7 @@ use App\Http\Controllers\FashionController;
 use App\Http\Controllers\JewelryController;
 use App\Http\Controllers\KullaniciController;
 // use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +39,8 @@ Route::prefix('admin')->group(function () {
     Route::post('/dashboard/fashion/addproduct', [FashionController::class, 'create'])->middleware('admin');
     Route::get('/dashboard/jewelry/addproduct', [JewelryController::class, 'form'])->middleware('admin');
     Route::post('/dashboard/jewelry/addproduct', [JewelryController::class, 'create'])->middleware('admin');
+    Route::get('/dashboard/products', [ProductController::class, 'list'])->middleware('admin');
+    Route::get('/dashboard/addproduct', [ProductController::class, 'categorySelect'])->middleware('admin');
 });
 
 //#Admin Routes

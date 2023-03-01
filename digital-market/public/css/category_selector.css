@@ -1,0 +1,32 @@
+.categories-div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.categories-div ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categories-div a{
+    background-color: orange;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.center_content p{
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.center_content{
+    padding: 20px;
+}

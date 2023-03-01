@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Jewelry;
+use App\Models\Product;
 
 class JewelryController extends Controller
 {
@@ -13,7 +15,8 @@ class JewelryController extends Controller
 
     public function list()
     {
-        $products = Jewelry::query()->get();
+        // $products = Jewelry::query()->get();
+        $products = Category::find(3)->products;
         return view('admin.admin_jewelry', compact('products'));
     }
 
@@ -24,7 +27,13 @@ class JewelryController extends Controller
 
     public function create()
     {
-        Jewelry::query()->insert([
+        // Jewelry::query()->insert([
+        //     'name' => request()->name,
+        //     'description' => request()->description,
+        //     'price' => request()->price,
+        // ]);
+        Product::create([
+            'category_id' => 3,
             'name' => request()->name,
             'description' => request()->description,
             'price' => request()->price,

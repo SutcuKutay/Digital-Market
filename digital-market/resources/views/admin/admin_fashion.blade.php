@@ -19,7 +19,7 @@
         <div class="panel">
             <div class="panel_header">
                 <div class="panel_title">
-                    <span>Product List</span>
+                    <span>Product List | Fashion</span>
                 </div>
             </div>
             <div class="panel_body">

@@ -21,6 +21,7 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="{{ asset('panel/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/user_auth.css') }}">
+    @yield('css')
 </head>
 
 <body id="page-top">

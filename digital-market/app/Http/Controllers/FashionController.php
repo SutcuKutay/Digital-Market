@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Fashion;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class FashionController extends Controller
@@ -14,7 +16,8 @@ class FashionController extends Controller
 
     public function list()
     {
-        $products = Fashion::query()->get();
+        // $products = Fashion::query()->get();
+        $products = Category::find(2)->products;
         return view('admin.admin_fashion', compact('products'));
     }
 
@@ -25,7 +28,13 @@ class FashionController extends Controller
 
     public function create()
     {
-        Fashion::query()->insert([
+        // Fashion::query()->insert([
+        //     'name' => request()->name,
+        //     'description' => request()->description,
+        //     'price' => request()->price,
+        // ]);
+        Product::create([
+            'category_id' => 2,
             'name' => request()->name,
             'description' => request()->description,
             'price' => request()->price,

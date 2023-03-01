@@ -299,6 +299,7 @@
                             <span class="menu-text">Products</span>
                         </a>
                         <ul class="dashboard-menu">
+                            <li><a href="/admin/dashboard/products">All Products</a></li>
                             <li><a href="/admin/dashboard/electronics">Electronics</a></li>
                             <li><a href="/admin/dashboard/fashion">Fashion</a></li>
                             <li><a href="/admin/dashboard/jewelry">Jewelry</a></li>
