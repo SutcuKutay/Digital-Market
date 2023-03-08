@@ -303,7 +303,7 @@
                             <li><a href="/admin/dashboard/electronics">Electronics</a></li>
                             <li><a href="/admin/dashboard/fashion">Fashion</a></li>
                             <li><a href="/admin/dashboard/jewelry">Jewelry</a></li>
-                            <li><a href="#">New Category</a></li>
+                            <li><a href="/admin/dashboard/addcategory">New Category</a></li>
                         </ul>
                     </li>
                     <li class="single-nav-wrapper">

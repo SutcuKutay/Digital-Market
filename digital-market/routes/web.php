@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ElectronicController;
 use App\Http\Controllers\FashionController;
 use App\Http\Controllers\JewelryController;
 use App\Http\Controllers\KullaniciController;
 // use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
@@ -41,13 +43,13 @@ Route::prefix('admin')->group(function () {
     Route::post('/dashboard/jewelry/addproduct', [JewelryController::class, 'create'])->middleware('admin');
     Route::get('/dashboard/products', [ProductController::class, 'list'])->middleware('admin');
     Route::get('/dashboard/addproduct', [ProductController::class, 'categorySelect'])->middleware('admin');
+    Route::get('/dashboard/addcategory', [CategoryController::class, 'form'])->middleware('admin');
+    Route::post('/dashboard/addcategory', [CategoryController::class, 'create'])->middleware('admin');
 });
 
 //#Admin Routes
 
-Route::get('/', function () {
-    return view('home_page');
-});
+Route::get('/', [PageController::class, 'homePage']);
 
 Route::prefix('user')->group(function () {
     Route::get('/electronics', [ElectronicController::class, 'show'])->name('user_electronics');

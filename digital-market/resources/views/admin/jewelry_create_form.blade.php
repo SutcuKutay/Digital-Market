@@ -12,7 +12,7 @@
                     <div class="logo">
                         <img src="{{ asset('images/logo.png') }}" alt="" class="img-fluid" width="200" height="100">
                     </div>
-                    <form action="/admin/dashboard/jewelry/addproduct" method="post">
+                    <form action="/admin/dashboard/jewelry/addproduct" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group icon_parent">
                             <label for="name">Product Name</label>
@@ -22,10 +22,10 @@
                             <label for="description">Description</label>
                             <input id="description" type="text" class="form-control" name="description" required>
                         </div>
-                        {{-- <div>
-                            <label for="picture">Picture URL</label>
-                            <input id="picture" type="text" class="form-control" name="picture">
-                        </div> --}}
+                        <div>
+                            <label for="image">Image</label>
+                            <input id="image" type="file" class="form-control" name="image">
+                        </div>
                         <div class="form-group icon_parent">
                             <label for="price">Price</label>
                             <input id="price" type="text" class="form-control" name="price" required>

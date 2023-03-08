@@ -12,10 +12,11 @@
                         <h1 class="fashion_taital">Man & Woman Fashion</h1>
                         <div class="fashion_section_2">
                             <div class="row">
+                                @foreach($fashions as $fashion)
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="box_main">
-                                        <h4 class="shirt_text">Man T -shirt</h4>
-                                        <p class="price_text">Price <span style="color: #262626;">$ 30</span></p>
+                                        <h4 class="shirt_text">{{$fashion->name}}</h4>
+                                        <p class="price_text">Price <span style="color: #262626;">$ {{$fashion->price}}</span></p>
                                         <div class="tshirt_img"><img src="images/tshirt-img.png"></div>
                                         <div class="btn_main">
                                             <div class="buy_bt"><a href="#">Buy Now</a></div>
@@ -23,7 +24,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
+                                @endforeach
+                                {{-- <div class="col-lg-4 col-sm-4">
                                     <div class="box_main">
                                         <h4 class="shirt_text">Man -shirt</h4>
                                         <p class="price_text">Price <span style="color: #262626;">$ 30</span></p>
@@ -44,7 +46,7 @@
                                             <div class="seemore_bt"><a href="#">See More</a></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -56,7 +58,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="box_main">
-                                        <h4 class="shirt_text">Man T -shirt</h4>
+                                        <h4 class="shirt_text">Ronaldo</h4>
                                         <p class="price_text">Price <span style="color: #262626;">$ 30</span></p>
                                         <div class="tshirt_img"><img src="images/tshirt-img.png"></div>
                                         <div class="btn_main">
@@ -438,9 +440,18 @@
             <a class="carousel-control-next" href="#jewellery_main_slider" role="button" data-slide="next">
                 <i class="fa fa-angle-right"></i>
             </a>
-            <div class="loader_main">
+            {{-- <div class="loader_main">
                 <div class="loader"></div>
-            </div>
+            </div> --}}
+            {{-- <div>
+                @foreach($fashions as $fashion){
+                    $sayac++;
+                }
+                @endforeach
+                <p>
+                    Fashion product total: {{$sayac}}
+                </p>
+            </div> --}}
         </div>
     </div>
     <!-- jewellery  section end -->

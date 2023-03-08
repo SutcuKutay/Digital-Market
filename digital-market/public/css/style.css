@@ -552,9 +552,14 @@ a:hover {
 /* fashion section start */
 
 .fashion_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    float: left;
     padding-bottom: 150px;
+    padding-top: 150px;
 }
 
 .fashion_taital {

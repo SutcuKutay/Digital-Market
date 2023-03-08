@@ -5,7 +5,18 @@
 @section('content')
     <!-- electronic section start -->
     <div class="fashion_section">
-        <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+        @foreach ($products as $product)
+            <div class="card" style="width: 18rem;">
+
+                <img src="{{ asset('uploads/products') . '/' . $product->image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $product->name }}</h5>
+                    <p class="card-text">{{ $product->description }}</p>
+                    <a href="https://www.youtube.com/watch?v=8yEk5qq_Q-Y" class="btn btn-primary">Purchase</a>
+                </div>
+            </div>
+        @endforeach
+        {{-- <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
@@ -141,7 +152,7 @@
             <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
                 <i class="fa fa-angle-right"></i>
             </a>
-        </div>
+        </div> --}}
     </div>
     <!-- electronic section end -->
 @endsection
