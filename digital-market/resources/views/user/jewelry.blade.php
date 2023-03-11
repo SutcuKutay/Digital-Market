@@ -5,6 +5,8 @@
 @section('content')
     <!-- jewellery  section start -->
     <div class="fashion_section">
+        <h1>Jewelry</h1>
+        <div class="fashion_section_cards-div">
         @foreach ($products as $product)
             <div class="card" style="width: 18rem;">
 
@@ -12,10 +14,11 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->name }}</h5>
                     <p class="card-text">{{ $product->description }}</p>
-                    <a href="https://www.youtube.com/watch?v=8yEk5qq_Q-Y" class="btn btn-primary">Purchase</a>
+                    <a href="#" class="btn btn-primary">Purchase</a>
                 </div>
             </div>
         @endforeach
+        </div>
         {{-- <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">

@@ -139,6 +139,15 @@
                                         |
                                     </li>
                                     <li>
+                                        <a href="#">
+                                            <img src="{{asset('images/shopping-cart.png')}}" alt="" width="25" height="25">
+                                            Cart
+                                        </a>
+                                    </li>
+                                    <li>
+                                        |
+                                    </li>
+                                    <li>
                                         <form action="/user/logout" method="POST">
                                             @csrf
                                             <button class="user-logout-button" type="submit">Logout</button>
